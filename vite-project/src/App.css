@@ -1,0 +1,53 @@
+
+@font-face {
+  font-family: stars;
+  src: url(./assets/star-renegades-font/StarRenegades-JR9Va.ttf);
+}
+body{
+  padding: 0px;
+  margin: 0px;
+  font-family: stars;
+  min-height: 100%;
+}
+#root{
+  min-height: 100%;
+}
+
+
+.animated-background {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(56, 0, 73) 7%, rgb(99, 0, 99), rgb(244, 174, 244) 100%);
+
+  background-size: 200% 200%;
+  animation: gradientAnimation 20s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
+
+
+.rotating-element {
+  transition: transform 0.5s ease;
+}
+
+/* Animação de rotação */
+.rotating-element:hover {
+  transform: rotate(360deg);      animation: rotate-center 0.6s ease-in-out both;
+}
+
+
+.home{
+  height: 80vh;
+}
